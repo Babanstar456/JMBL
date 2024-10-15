@@ -209,12 +209,23 @@ article {
     color: #fff;
     text-align: center;
 }
-.a2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #18ae5b;
-    font-size: 18px;
-    color: #fff;
-    text-align: justify;
+.a2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color:rgb(24,174,91);
+  font-size: 18px;
+  color: #fff;
+  text-align: justify;
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Align items in a column */
+  align-items: center; /* Center horizontally */
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+.a2 img {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px 0; /* Add spacing around the image */
+}
 }
 .hp  {
     float: right;    
@@ -228,7 +239,7 @@ article {
       max-width: 1440px;
       width: 100%;
       margin: 0 auto;
-      padding: 0 2rem;
+      padding-left: 10px 2rem;
     }
     
     .container1 h2 {
@@ -275,9 +286,11 @@ article {
     }
     
     .first_section img {
+      background-image: url(https://media.istockphoto.com/id/909908830/photo/microscope-with-lab-glassware.jpg?s=612x612&w=0&k=20&c=pKcRBSt1ZWLrUkTtcuTfVJRRuUM-WU3Gd3w9tu0v-PY=);
       display: block;
       object-fit: cover;
       width: 100%;
+      padding-left:20px 20px;
     }
     .first_section p {
       padding: 1.5rem 0;

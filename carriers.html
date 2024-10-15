@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carrier.css">
+
+</head>
+
+<body>
+    <div class="form-container">
+        <img src="https://www.jotform.com/uploads/ugurg/form_files/join-us.63a2be634d73e1.10397179.png" alt="Join Us" class="header-image">
+        <h1>Employment Application Form</h1>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-section">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-section">
+                <label for="birthdate">Date of Birth:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+
+            <div class="form-section">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-section">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-section">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+            </div>
+
+            <div class="form-section">
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" required>
+            </div>
+
+            <div class="form-section">
+                <label for="motivation">Upload Motivation Letter:</label>
+                <input type="file" id="motivation" name="motivation" required>
+            </div>
+
+            <div class="form-section">
+                <label for="certifications">Upload Certifications (optional):</label>
+                <input type="file" id="certifications" name="certifications">
+            </div>
+
+            <div class="form-section">
+                <label for="reference">References (if any):</label>
+                <input type="text" id="reference" name="reference" placeholder="Enter reference details">
+            </div>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>
