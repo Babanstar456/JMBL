@@ -1,0 +1,352 @@
+/* General resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and General Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background: rgba(49, 80, 208, 0.8);
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main Form Section */
+main {
+    padding: 80px 20px 20px; /* Padding at the top to account for the fixed header */
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: flex-start;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+.header-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    background-color: #3366cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #294bb3;
+}
+
+/* Footer Styles */
+footer {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 0; /* Slimmer padding */
+    margin-top: 1rem; /* Adds some space above the footer */
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #1c2833;
+  }
+  
+  .footer_content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-gap: 1.5rem; /* Reduce the gap between sections */
+    padding: 0.5rem 2rem; /* Slimmer padding */
+    align-items: center;
+  }
+  
+  .footer_headings {
+    color: #000;
+    padding-bottom: 0.5rem; /* Reduced padding */
+    position: relative;
+    font-size: 1rem; /* Slightly smaller heading */
+  }
+  
+  .footer_headings::after {
+    content: "";
+    height: 2px;
+    background: #e74c3c;
+    width: 50%;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+  
+  .first_section img {
+    display: block;
+    width: 60px; /* Smaller image */
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  
+  .first_section p {
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 0.85rem; /* Slightly smaller text */
+  }
+  
+  .social_icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem; /* Reduced margin */
+  }
+  
+  .social_icons a {
+    margin: 0 8px; /* Smaller margin */
+  }
+  
+  .social_icons i {
+    font-size: 1.2rem; /* Slightly smaller icons */
+    cursor: pointer;
+    background: #ddd;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .social_icons i:hover {
+    transform: translateY(-3px); /* Smaller hover effect */
+  }
+  
+  .second_section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .second_section ul li {
+    margin: 0.5rem 0;
+  }
+  
+  .second_section ul li a {
+    color: #1c2833;
+    font-size: 0.85rem; /* Smaller font size */
+  }
+  
+  .third_section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .third_section ul li {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .third_section ul li i {
+    margin-right: 8px; /* Smaller spacing */
+    background: #ddd;
+    border-radius: 50%;
+    font-size: 1rem;
+    padding: 6px; /* Smaller padding */
+  }
+  
+  .third_section span {
+    font-size: 0.85rem; /* Slightly smaller text */
+  }
+  
+  .fourth_section form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .fourth_section .form_control {
+    margin-bottom: 0.5rem;
+  }
+  
+  .fourth_section input,
+  .fourth_section textarea {
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 0.85rem; /* Smaller input font size */
+  }
+  
+  .fourth_section button {
+    background: #e74c3c;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 0.85rem; /* Smaller button font size */
+    transition: background 0.3s ease;
+  }
+  
+  .fourth_section button:hover {
+    background: #c0392b;
+  }
+  
+  .footer_txt {
+    background: #f0f3f4;
+    padding: 0.5rem 0;
+    text-align: center;
+    box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.2);
+    font-size: 0.75rem; /* Smaller footer text */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer_content {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem; /* Smaller gap on smaller screens */
+      padding: 0.5rem 1rem; /* Adjusted padding for mobile */
+    }
+  
+    .social_icons {
+      justify-content: center;
+    }
+  
+    .social_icons i {
+      font-size: 1rem; /* Smaller icons on mobile */
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  @media (max-width: 568px) {
+    .footer_content {
+      grid-template-columns: 1fr;
+      grid-gap: 1.5rem; /* Increase gap for a cleaner look */
+      padding: 0.5rem 1rem;
+    }
+  
+    .social_icons i {
+      font-size: 0.9rem;
+      width: 25px;
+      height: 25px;
+    }
+  }
